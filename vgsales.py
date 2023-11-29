@@ -9,7 +9,7 @@ from urllib.error import URLError
 
 @st.cache_data
 def get_data():
-    path_ = "datasets/vgsales.csv"
+    path_ = "vgsales.csv"
     df = pd.read_csv(path_)
     # drop NAN on Year and Publisher
     df.dropna(inplace= True)
